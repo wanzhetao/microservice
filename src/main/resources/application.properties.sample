@@ -1,0 +1,11 @@
+
+server.address=192.168.43.1
+server.port=8086
+
+## kong 远程注册必备参数
+kong.loginaddr=http://127.0.0.1:1338/login
+kong.loginuser=konga
+kong.loginpass=198071
+kong.registeraddr=http://127.0.0.1:1338/apireg/registerApi
+
+swagger.resources=/swagger-resources
