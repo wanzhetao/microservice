@@ -42,6 +42,7 @@
                     <altDeploymentRepository>internal.repo::default::file://${project.build.directory}/microstore</altDeploymentRepository>
                 </configuration>
             </plugin>
+            <!--
             <plugin>
                 <groupId>com.github.github</groupId>
                 <artifactId>site-maven-plugin</artifactId>
@@ -49,11 +50,9 @@
                 <configuration>
                     <repositoryName>microstore</repositoryName>
 			        <repositoryOwner>13816919057@163.com</repositoryOwner>
-			        <!--dependency分支-->
 			        <branch>refs/heads/master</branch>
 			        <message>Artifacts for ${project.name}/${project.artifactId}/${project.version}</message>
 			        <noJekyll>true</noJekyll>
-			        <!-- Deployment values -->
 			        <outputDirectory>${project.build.directory}/microstore</outputDirectory>
 			        <includes>
 			            <include>**/*</include>
@@ -69,6 +68,7 @@
                     </execution>
                 </executions>
             </plugin>
+            -->
         </plugins>
    </build>
 
